@@ -7,6 +7,12 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+# Add permissions for GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   test:
     timeout-minutes: 60
@@ -48,3 +54,19 @@ jobs:
           playwright-report/
           test-results/
         retention-days: 30
+    
+    # GitHub Pages deployment steps
+    - name: Setup Pages
+      if: always()
+      uses: actions/configure-pages@v4
+    
+    - name: Upload artifact to Pages
+      if: always()
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: playwright-report/
+    
+    - name: Deploy to GitHub Pages
+      if: always()
+      id: deployment
+      uses: actions/deploy-pages@v4
