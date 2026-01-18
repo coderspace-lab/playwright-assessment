@@ -35,8 +35,8 @@ jobs:
       env:
         UI_BASE_URL: https://www.saucedemo.com
         API_BASE_URL: https://jsonplaceholder.typicode.com
-        STANDARD_USER: standard_user
-        PASSWORD: secret_sauce
+        STANDARD_USER: ${{ secrets.TEST_USERNAME }}
+        PASSWORD: ${{ secrets.TEST_PASSWORD }}
         HEADLESS: true
         BROWSER: chromium
         WORKERS: 4
