@@ -1,0 +1,23 @@
+{
+  "name": "playwright-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderspace-lab/playwright-assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderspace-lab/playwright-assessment/issues"
+  },
+  "homepage": "https://github.com/coderspace-lab/playwright-assessment#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9",
+    "dotenv": "^17.2.3"
+  }
+}
