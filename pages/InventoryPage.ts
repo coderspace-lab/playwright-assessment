@@ -8,7 +8,7 @@ export class InventoryPage extends BasePage {
   private readonly cartBadge: Locator;
   private readonly cartLink: Locator;
   private readonly pageHeading: Locator;
-  private readonly sortDropdown: Locator; // NEW
+  private readonly sortDropdown: Locator;
 
   constructor(page: Page) {
     super(page);
@@ -17,7 +17,7 @@ export class InventoryPage extends BasePage {
     this.cartBadge = page.locator('[data-test="shopping-cart-badge"]');
     this.cartLink = page.locator('[data-test="shopping-cart-link"]');
     this.pageHeading = page.locator('[data-test="title"]');
-    this.sortDropdown = page.locator('[data-test="product-sort-container"]'); // NEW
+    this.sortDropdown = page.locator('[data-test="product-sort-container"]');
   }
 
   /**

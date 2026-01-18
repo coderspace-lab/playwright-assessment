@@ -8,8 +8,8 @@ setup('authenticate', async ({ page }) => {
   
   await loginPage.goto();
   await loginPage.login(
-    process.env.STANDARD_USER || 'standard_user',
-    process.env.PASSWORD || 'secret_sauce'
+    process.env.STANDARD_USER!,
+    process.env.PASSWORD!
   );
   
   // Wait for successful login

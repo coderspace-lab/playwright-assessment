@@ -16,9 +16,8 @@ Create a `.env` file in the root directory:
 ```bash
 # UI Testing
 UI_BASE_URL=https://www.saucedemo.com
-STANDARD_USER=standard_user
-LOCKED_USER=locked_out_user
-PASSWORD=secret_sauce
+STANDARD_USER=your_username_here
+PASSWORD=your_password_here
 
 # API Testing
 API_BASE_URL=https://jsonplaceholder.typicode.com
