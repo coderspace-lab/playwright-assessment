@@ -19,7 +19,7 @@ export class LoginPage extends BasePage {
    * Navigate to login page
    */
   async goto(): Promise<void> {
-    await this.navigate('/');
+    await this.page.goto('/');
   }
 
   /**
