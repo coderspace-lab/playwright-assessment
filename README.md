@@ -48,11 +48,8 @@ npx playwright test --debug
 ```bash
 # View HTML report after test run
 npx playwright show-report
-
-# Reports are generated in:
-# - playwright-report/ (HTML)
-# - test-results/ (JSON)
 ```
+**Latest Test Report in CI/CD:** [View Report](https://coderspace-lab.github.io/playwright-assessment/)
 
 ## CI/CD
 
